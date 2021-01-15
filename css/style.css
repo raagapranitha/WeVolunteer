@@ -1,0 +1,132 @@
+ul#navigation{
+	float: left;
+	margin: 30px 0 0 40px;
+	padding: 0;
+	list-style: none;
+}
+body {
+  background-image: url('../images/test2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+#header{
+	
+	margin: 0 auto;
+	overflow: hidden;
+}
+#header h1{
+	display: block;
+    height: 119px;
+    margin: 0 0 0 0px;
+    padding: 11px 0 0;
+    width: 264px;
+	float: left;
+}
+#header a#title{
+	display: block;
+    height: 119px;
+    margin: 0 0 0 0px;
+    padding: 11px 0 0;
+    width: 300px;
+	float: left;
+}
+#header a#title img{
+	border: 0;
+	width: 300px;
+
+}
+#header ul#navigation{
+	float: left;
+	margin: 30px 0 0 40px;
+	padding: 0;
+	list-style: none;
+}
+#header ul#navigation li.first{
+	margin: 0;
+}
+#header ul#navigation li{
+	float: left;
+	height: 28px;
+	margin: 0 0 0 33px;
+	_margin: 0 0 0 23px;
+	padding: 0 0 0 9px;
+}
+#header ul#navigation li.selected{
+	background: url(../images/bg-menu-left.gif) no-repeat left top;
+}
+#header ul#navigation li a{
+	text-decoration: none;
+	color: #000;
+	text-shadow: 1px 1px 0 #713c12, -1px -1px 0 #713c12, -1px 1px 0 #713c12, 1px -1px 0 #713c12;
+	font-size: 25px;
+	font-family: arial;
+	display: block;
+	height: 28px;
+	line-height: 26px;
+	padding: 0 20px 0 9px;
+	display: inline-block;
+}
+#header ul#navigation li.selected a{
+	color: #ffec00;
+	background: url(../images/bg-menu-right.gif) no-repeat right top;	
+}
+#header ul#navigation li a:hover{
+	color: #ffec00;
+}
+#header div#featured{
+	clear: both;
+	margin: 0 0 0 180px;
+	padding: 30px 0 0 0;
+	height: 530px;
+}
+#header div#featured a{
+	position: relative;
+	top: 320px;
+	top: 320px;
+	left: 522px;
+	color: #480500;
+	font-size: 13px;
+	font-family: arial;
+	text-decoration: none;
+}
+#header div#featured img{
+	position: absolute;
+}
+#header div#featured h3{
+	margin: 0;
+	position: relative;
+	top: 320px;
+	font-size: 23px;
+	color: #603500;
+	font-family: arial;
+	left: 245px;
+	font-weight: bold;
+	font-style: italic;
+	width: 340px;
+}
+#header div#featured p{
+	position: relative;	
+	top: 320px;
+	margin: 0;
+	text-align: right;
+	right: 195px;
+	line-height: 20px;
+	font-size: 14px;
+	font-family: arial;
+	color: #a8947b;
+}
+
+.container {
+	font-size: 20px;
+}
+
+.container #search{
+	font-size: 30px;
+}
+
+
+.container #listreq input{
+    font-weight: bold;
+}
