@@ -10,9 +10,4 @@ forms:
     - type: from_text
     items:
     - type: from_text
-    # dateTime:
-    # - type: from_text
-# forms:
-#   newsletter_form:
-#     email:
-#     - type: from_text
+   
