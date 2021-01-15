@@ -1,0 +1,134 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- inform
+- request
+- informAddress
+- informZip
+- informMobileNum
+- informItems
+- bye
+# - informDateTime
+# entities:
+#   - name
+#   - address
+#   - mobile
+#   - items
+slots:
+  name:
+    type: unfeaturized
+    influence_conversation: false
+  address:
+     type: unfeaturized
+     influence_conversation: false
+  zipcode:
+     type: unfeaturized
+     influence_conversation: false
+  mobile:
+     type: unfeaturized
+     influence_conversation: false
+  items:
+     type: unfeaturized
+     influence_conversation: false
+
+# slots:
+#   name:
+#     type: text
+#   address:
+#      type: text
+#   mobile:
+#      type: text
+#   items:
+#      type: text
+  # dateTime:
+  #    type: unfeaturized
+  #    influence_conversation: false
+
+responses:
+  utter_greet:
+  - text: |
+      Hello! How can I help you?
+  utter_ask_name:
+  - text: |
+      Sure, What is your name?
+  utter_ask_address:
+  - text: |
+      What is your address?
+  utter_ask_zipcode:
+  - text: |
+      What is your zipcode?
+  utter_ask_mobile:
+  - text: |
+      What is contact number/mobile number?
+  utter_ask_items:
+  - text: |
+      What items do you need to get delivered ?
+  utter_bye:
+  - text: |
+      Bye. Have a nice day!
+  # utter_ask_dateTime:
+  # - text: |
+  #     When do you need them delivered like Date and Time?
+  # utter_request_done:
+  # - text: |
+  #     You're all set!  Items {items} will be delivered to {name} at {address} by a volunteer as soon as possible. Your number is {mobile}.
+  utter_request_done:
+  - text: |
+      You're all set! Your items will be delivered by a volunteer.
+actions:
+- '...'
+- utter_greet
+- utter_request_done
+- action_submit_request
+forms:
+  request_form:
+    name:
+    - type: from_text
+    address:
+    - type: from_text
+    zipcode:
+    - type: from_text
+    mobile:
+    - type: from_text
+    items:
+    - type: from_text
+
+    # dateTime:
+    # - type: from_text
+
+# version: '2.0'
+# session_config:
+#   session_expiration_time: 60
+#   carry_over_slots_to_new_session: true
+# intents:
+# - greet
+# - inform
+# - subscribe
+# slots:
+#   email:
+#     type: unfeaturized
+#     influence_conversation: false
+# responses:
+#   utter_greet:
+#   - text: |
+#       Hello! How can I help you?
+#   - text: |
+#       Hi!
+#   utter_ask_email:
+#   - text: |
+#       What is your email address?
+#   utter_subscribed:
+#   - text: |
+#       Check your inbox at {email} in order to finish subscribing to the newsletter!
+#   - text: You're all set! Check your inbox at {email} to confirm your subscription.
+# actions:
+# - '...'
+# - utter_greet
+# - utter_subscribed
+# forms:
+#   newsletter_form:
+#     email:
+#     - type: from_text

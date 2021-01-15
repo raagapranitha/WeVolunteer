@@ -1,0 +1,41 @@
+responses:
+   utter_greet:
+       - text: |
+           Hello! How can I help you?
+       - text: |
+           Hi!
+   utter_ask_name:
+       - text: |
+           What is your name?
+   utter_ask_address:
+       - text: |
+           What is your address?
+   utter_ask_zipcode:
+       - text: |
+           What is your zipcode?
+   utter_ask_mobile:
+       - text: |
+           What is contact number/mobile number?
+   utter_ask_items:
+       - text: |
+           What items do you need to get delivered ?
+   # utter_ask_dateTime:
+  # - text: |
+  #     When do you need them delivered like Date and Time?
+   utter_request_done:
+       - text: |
+           You're all set! Items {items} will be delivered to {name} at {address} by a volunteer as soon as possible. Your number is {mobile}.
+# responses:
+#    utter_greet:
+#        - text: |
+#            Hello! How can I help you?
+#        - text: |
+#            Hi!
+#    utter_ask_email:
+#        - text: |
+#            What is your email address?
+#    utter_subscribed:
+#        - text: |
+#            Check your inbox at {email} in order to finish subscribing to the newsletter!
+#        - text: |
+#            You're all set! Check your inbox at {email} to confirm your subscription.

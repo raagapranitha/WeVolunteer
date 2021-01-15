@@ -1,0 +1,18 @@
+forms:
+  request_form:
+    name:
+    - type: from_text
+    address:
+    - type: from_text
+    zipcode:
+    - type: from_text
+    mobile:
+    - type: from_text
+    items:
+    - type: from_text
+    # dateTime:
+    # - type: from_text
+# forms:
+#   newsletter_form:
+#     email:
+#     - type: from_text
